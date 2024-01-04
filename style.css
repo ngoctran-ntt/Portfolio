@@ -1,0 +1,500 @@
+@font-face {
+    font-family: Handwind;
+    src: url(Handwind.ttf);
+}
+@font-face {
+    font-family: Helmord;
+    src: url(Helmord.ttf);
+}
+*{
+    margin:0;
+    padding:0;
+}
+.heading{
+    font-size: 68px;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px 0;
+}
+.small-heading{
+    font-size: 36px;
+    font-weight: 550;
+    margin: 0 0 12px 0;
+}
+.content{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.header{
+    display:flex;
+    height: 80px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 20px rgba( 0, 0, 0, 0.12);
+    padding: 0 40px;
+    background-color: white;
+    z-index: 5;
+}
+.header__menu{
+    display: flex;
+    flex:1;
+    padding-left: 28%;
+    justify-content: space-between;
+}
+.header__logo{
+    flex:1;
+}
+.intro{
+    padding: 0 26.25%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+}
+.intro__content{
+   background-image: url(./Image/Layer_1.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+.hi-there{
+    display: flex;
+}
+.waving-hand{
+    width: 160px; 
+    height: 160px;
+}
+.waving-hand:hover{
+    animation: wave 1s infinite linear;
+    transform-origin: bottom center;
+}
+@keyframes wave {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-10deg);
+    }
+  }
+.iam{
+    display: flex;
+    justify-content: space-between;
+}
+.about{
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 80px;
+}
+.about__background{
+    background-image: url(./Image/Grey\ white\ abstract\ background\ geometry\ shine\ and\ layer\ element\ vector\ for\ presentation\ design_\ Suit\ for\ business\,\ corporate\,\ institution\,\ party\,\ festive\,\ seminar\,\ and\ talks.jpeg);
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 0 10%;
+}
+.about__image{
+    flex:2;
+}
+.about__content{
+    line-height: 1.75;
+    font-size: 20px;
+    flex:3;
+    margin-left: 80px;
+}
+.art{
+    padding: 80px 10%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.art__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.artwork{
+    flex-basis: 45%;
+    margin-bottom: 48px;
+}
+.artwork__image{
+    width: 100%;
+    height: 350px;
+}
+.artwork__date{
+    margin: 12px 0;
+}
+.artwork__title{
+    margin-bottom: 12px;
+}
+.artwork__description{
+    width: 300px;
+    display: inline-block;
+    text-align: center;
+}
+.blog{
+    padding-top: 80px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.blog__content{
+    padding: 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.post{
+    width: 350px;
+    text-align: left;
+    padding: 0 12px 56px 20px;
+}
+.post__image{
+    width: 350px;
+    height: 250px;
+}
+.post__category{
+    margin-top: 12px;
+    margin: 0 4px;
+}
+.post__title{
+    margin: 12px 4px;
+}
+.post__description{
+    margin-bottom: 12px;
+    margin: 0 4px;
+}
+.hobbies{
+    padding-top: 80px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.hobbies__heading{
+    height: 40px;
+    margin: 28px 0;
+    font-family: Handwind;
+    letter-spacing: 8px;
+}
+.hobbies__content1{
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.hobbies__content2{
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.hobbies__content1--img1{
+    height: 350px;
+    width: 350px;
+    background-image: url(./Image/Download_premium_png_of_Simple_png_Instant_photo_frame_mockup__transparent_design_by_Benjamas_about_polaroid__polaroid_png_frame__polaroid_frame__polaroid_mockup__and_polaroid_png_6009533__1_-removebg.png);
+    background-size: cover;
+    transform: rotate(-3deg);
+}
+.hobbies__content1--img1:hover{
+    transform: rotate(0) translateY(-6px);
+    transition: 1s;
+}
+.hobbies__content1--img1-pic{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 74px;
+    left: 74px;
+    background-image: url(./Image/IMG_0887.JPG);
+    background-size: cover;
+}
+.hobbies__content1--img2{
+    height: 350px;
+    width: 350px;
+    background-image: url(./Image/Download_premium_png_of_Simple_png_Instant_photo_frame_mockup__transparent_design_by_Benjamas_about_polaroid__polaroid_png_frame__polaroid_frame__polaroid_mockup__and_polaroid_png_6009533__1_-removebg.png);
+    background-size: cover;
+    transform: rotate(4deg);
+}
+.hobbies__content1--img2-pic{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 74px;
+    left: 74px;
+    background-image: url(./Image/IMG_0888.JPG);
+    background-size: cover;
+}
+.hobbies__content1--img2:hover{
+    transform: rotate(0) translateY(-6px);
+    transition: 1s;
+}
+.hobbies__content1--img3{
+    height: 350px;
+    width: 350px;
+    background-image: url(./Image/Download_premium_png_of_Simple_png_Instant_photo_frame_mockup__transparent_design_by_Benjamas_about_polaroid__polaroid_png_frame__polaroid_frame__polaroid_mockup__and_polaroid_png_6009533__1_-removebg.png);
+    background-size: cover;
+    transform: rotate(2deg);
+}
+.hobbies__content1--img3:hover{
+    transform: rotate(0) translateY(-6px);
+    transition: 1s;
+}
+.hobbies__content1--img3-pic{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 74px;
+    left: 74px;
+    background-image: url(./Image/IMG_0889.JPG);
+    background-size: cover;
+}
+.hobbies__content1--img4{
+    height: 350px;
+    width: 350px;
+    background-image: url(./Image/Download_premium_png_of_Simple_png_Instant_photo_frame_mockup__transparent_design_by_Benjamas_about_polaroid__polaroid_png_frame__polaroid_frame__polaroid_mockup__and_polaroid_png_6009533__1_-removebg.png);
+    background-size: cover;
+    transform: rotate(-5deg);
+}
+.hobbies__content1--img4:hover{
+    transform: rotate(0) translateY(-6px);
+    transition: 1s;
+}
+.hobbies__content1--img4-pic{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 74px;
+    left: 74px;
+    background-image: url(./Image/IMG_0891.JPG);
+    background-size: cover;
+}
+.hobbies__content1--img5{
+    height: 350px;
+    width: 350px;
+    background-image: url(./Image/Download_premium_png_of_Simple_png_Instant_photo_frame_mockup__transparent_design_by_Benjamas_about_polaroid__polaroid_png_frame__polaroid_frame__polaroid_mockup__and_polaroid_png_6009533__1_-removebg.png);
+    background-size: cover;
+    transform: rotate(6deg);
+}
+.hobbies__content1--img5:hover{
+    transform: rotate(0) translateY(-6px);
+    transition: 1s;
+}
+.hobbies__content1--img5-pic{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 74px;
+    left: 74px;
+    background-image: url(./Image/IMG_0892.JPG);
+    background-size: cover;
+}
+.connect{
+    padding-top: 80px;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.connect__content{
+    width: 800px;
+    height: 550px;
+    background-image: url(./Image/cloud_preview_rev_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.connect__content--info{
+    font-size: 16px;
+}
+.button__email{
+    height: 30px;
+    margin: 4px 0;
+    border-radius: 6px;
+    border: 2px solid rgb(201, 201, 201);
+    background-color: rgb(243, 243, 243);
+}
+.button__email:hover{
+    transform: translateY(-2px);
+    transition: 1s;
+    box-shadow: 0px 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.social-media__style{
+    color: black; 
+    text-decoration: none;
+}
+.social-media__style:hover{
+    color: gray;
+}
+.journey{
+    padding: 80px 10% 0 10%;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+.journey__title1{
+    text-align: left;
+    position: absolute;
+    top: 260px;
+    z-index: 4;
+    width: 310px;
+}
+.journey__title2{
+    text-align: left;
+    position: absolute;
+    top: 850px;
+    z-index: 4;
+    width: 310px;
+}
+.journey__content{
+    display: flex;
+}
+.journey__content--timeline{
+    flex: 2;
+}
+.journey__content--pics{
+    flex: 1;
+}
+.y1{
+    height: 100px;
+    display: flex;
+}
+.space{
+    width: 50%;
+    height: 100%;
+}
+.content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+.y2{
+    height: 150px;
+    display: flex;
+}
+.y3{
+    height: 100px;
+    display: flex;
+}
+.y4{
+    height: 275px;
+    display: flex;
+}
+.y5{
+    height: 100px;
+    display: flex;
+}
+.y6{
+    height: 150px;
+    display: flex;
+}
+.y7{
+    height: 150px;
+    display: flex;
+}
+.y8{
+    height: 225px;
+    display: flex;
+}
+.y5{
+    height: 100px;
+    display: flex;
+}
+.y6{
+    height: 150px;
+    display: flex;
+}
+.y9{
+    height: 150px;
+    display: flex;
+}
+.y10{
+    height: 150px;
+    display: flex;
+}
+.y11{
+    height: 150px;
+    display: flex;
+}
+.pics1{
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    background-image: url(./Image/portfolio.jpg);
+    background-size: cover;
+    right: 0;
+    top: 20%;
+    z-index: 2;
+}
+.pics2{
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    background-image: url(./Image/portfolio1.jpg);
+    background-size: cover;
+    right: 0;
+    top: 28%;
+    z-index: 1;
+    top: 24%;
+}
+.pics3{
+    width: 350px;
+    height: 500px;
+    position: absolute;
+    background-image: url(./Image/portfolio3.jpg);
+    background-size: cover;
+    right: 0;
+    top: 60%;
+}
+.pics4{
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    background-image: url(./Image/IMG_9061.JPG);
+    background-size: cover;
+    right: 3%;
+    top: 82%; 
+}
+.menu__button{
+    color: black;
+    text-decoration: none;
+    overflow: hidden;
+    padding: 0 4px;
+}
+.line{
+    height: 1px;
+    border-bottom: solid black;
+    width: 0%;
+    transition: 0.25s;
+    transform: translateX(-10%);
+}
+.menu__content:hover + .line{
+    width: 120%;
+}
+.header__icon{
+    overflow: hidden;
+    padding: 0px 18px;
+}
+.header__icon-style{
+    transform: translateX(-200%);
+    transition: transform 0.2s;
+    color: lightgray;
+}
+.header__logo:hover .header__icon-style{
+    transform: translateX(-50%);
+}
+.home__icon{
+    font-size: 18px;
+}
+.home__icon:hover{
+    color: lightgrey;
+}
+.adventurer:hover{
+    color: cadetblue;
+}
